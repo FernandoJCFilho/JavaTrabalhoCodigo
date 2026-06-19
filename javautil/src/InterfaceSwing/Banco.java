@@ -13,8 +13,10 @@ public class Banco {
 
     private static String status = "Nao conectou";
 
+    // Porta 3306 ja estava sendo utilizada na minha maquina 
     public static String SERVIDOR = "jdbc:mysql://localhost:3326/cadastro";
     public static String USUARIO = "root";
+    // Mudança de senha
     public static String SENHA = "102030";
     public static Connection obterConexaoMySQL(){
         Connection conexao = null;
