@@ -1,0 +1,14 @@
+# Use root/example as user/password credentials
+
+services:
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "102030"
+    ports:
+      - "3326:3306"
+    volumes:
+      - ./mounts/mysql-connector-j-8.3.0.jar:/tmp/mysql-connector-j-8.3.0.jar
+

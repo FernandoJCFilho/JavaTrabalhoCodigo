@@ -202,7 +202,7 @@ public class Tela {
                         PPessoa oPPessoa = new PPessoa();
 
                         try {
-                            if (!oJTextFieldCPF.getText().trim().equalsIgnoreCase("") || textFieldNome.getText().trim().equalsIgnoreCase("") || FTextFieldDataNasc.getText().trim().equalsIgnoreCase("") || oJComboBox.getSelectedIndex() == 0) {
+                            if (oJTextFieldCPF.getText().trim().equalsIgnoreCase("") || textFieldNome.getText().trim().equalsIgnoreCase("") || FTextFieldDataNasc.getText().equalsIgnoreCase("") || oJComboBox.getSelectedIndex() == 0) {
                                 JOptionPane.showMessageDialog(null, "Preencha todos os dados!");
 
                                 return;
@@ -269,7 +269,7 @@ public class Tela {
                 try {
                     oListaPessoa = oPPessoa.consultarPessoaPorNome(textFiltro.getText().trim());
                     try {
-                        Arquivo.gerarArquivoTabela("COLOCAR CAMINHO", oListaPessoa);
+                        Arquivo.gerarArquivoTabela("./Arquivo_Java.txt", oListaPessoa);
                         JOptionPane.showMessageDialog(null, "Arquivo gerado com sucesso!");
                     } catch (IOException e1) {
                         System.out.println(e1.getMessage());

@@ -13,9 +13,9 @@ public class Banco {
 
     private static String status = "Nao conectou";
 
-    public static String SERVIDOR = "jdbc:mysql://localhost:3306/cadastro";
+    public static String SERVIDOR = "jdbc:mysql://localhost:3326/cadastro";
     public static String USUARIO = "root";
-    public static String SENHA = "12345";
+    public static String SENHA = "102030";
     public static Connection obterConexaoMySQL(){
         Connection conexao = null;
         

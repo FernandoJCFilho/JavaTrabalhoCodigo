@@ -15,7 +15,7 @@ public class Arquivo {
         String linha = "";
         
         for (EPessoa oEPessoa: oListaPessoa){
-            buffWrite.append(linha + oEPessoa.getCPF()+ "|" + oEPessoa.getNome() + "|" + oEPessoa.getDataNasc() + "|" + oEPessoa.getSexo());
+            buffWrite.append(linha + oEPessoa.getCPF()+ "|" + oEPessoa.getNome() + "|" + oEPessoa.getDataNasc() + "|" + oEPessoa.getSexo() + "\n");
         }
         
         buffWrite.close();
